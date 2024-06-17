@@ -16,6 +16,3 @@ def login_view(request):
 def register_view(request):
     return render(request, 'register.html')
     
-def reg_view(request):
-    return render(request, 'register.html')
-    
