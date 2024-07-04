@@ -14,9 +14,9 @@ def about(request):
 
 def contact(request):
     return render(request, 'users/contact.html')
+def profile(request):
+    return render(request, 'users/profile.html')
 
-def login_view(request):
-    return render(request, 'users/login.html')
 
 def register_view(request):
     if request.method == "POST":
@@ -30,4 +30,4 @@ def register_view(request):
         form=UserRegisterForm()
 
     return render(request, 'users/register.html', {'form': form})
-    
+
